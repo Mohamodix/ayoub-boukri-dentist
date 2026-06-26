@@ -287,23 +287,4 @@ header{
     gap:20px;
 }
 
-    .location{
-    padding:70px 8%;
-    text-align:center;
-}
-
-.location h2{
-    color:#0a84ff;
-    margin-bottom:20px;
-}
-
-.location p{
-    margin-bottom:30px;
-    font-size:18px;
-}
-
-.location iframe{
-    box-shadow:0 10px 25px rgba(0,0,0,.15);
-}
-
 }
