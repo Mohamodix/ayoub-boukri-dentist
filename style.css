@@ -1,128 +1,309 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ayoub Boukri Dental </title>
+/* Google Font */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
 
-    <link rel="stylesheet" href="style.css">
+body{
+    background:#f4f9ff;
+    color:#222;
+}
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+/* Header */
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-</head>
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 8%;
+    background:white;
+    box-shadow:0 2px 10px rgba(0,0,0,.08);
+    position:sticky;
+    top:0;
+}
 
-<body>
+.logo{
+    font-size:24px;
+    font-weight:700;
+    color:#0a84ff;
+}
 
-<header>
+.logo i{
+    margin-right:10px;
+}
 
-    <div class="logo">
-        <i class="fa-solid fa-tooth"></i>
-        Ayoub Boukri Dental 
-    </div>
+nav{
+    display:flex;
+    gap:20px;
+}
 
-    <nav>
-        <a href="#">Home</a>
-        <a href="appointment.html" class="appointment-btn">
-            Take Appointment
-        </a>
-    </nav>
+nav a{
+    text-decoration:none;
+    color:#333;
+    font-weight:500;
+}
 
-</header>
+.appointment-btn{
+    background:#0a84ff;
+    color:white;
+    padding:12px 20px;
+    border-radius:8px;
+    transition:.3s;
+}
 
-<section class="hero">
+.appointment-btn:hover{
+    background:#0067d6;
+}
 
-    <div class="hero-text">
+/* Hero */
 
-        <h1>Your Smile Deserves The Best Care</h1>
+.hero{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:80px 8%;
+    gap:50px;
+}
 
-        <p>
-            Welcome to Ayoub Boukri Dental .
-            We provide modern dental care with a friendly,
-            professional approach. Book your appointment online
-            in just a few clicks.
-        </p>
+.hero-text{
+    flex:1;
+}
 
-        <a href="appointment.html" class="main-button">
-            <i class="fa-solid fa-calendar-check"></i>
-            Take Appointment
-        </a>
+.hero-text h1{
+    font-size:52px;
+    margin-bottom:20px;
+    color:#0a84ff;
+}
 
-    </div>
+.hero-text p{
+    font-size:18px;
+    line-height:1.8;
+    margin-bottom:30px;
+}
 
-    <div class="hero-image">
+.main-button{
+    text-decoration:none;
+    background:#0a84ff;
+    color:white;
+    padding:15px 28px;
+    border-radius:10px;
+    display:inline-block;
+    transition:.3s;
+}
 
-        <div class="card">
+.main-button:hover{
+    transform:translateY(-4px);
+}
 
-            <i class="fa-solid fa-tooth big-icon"></i>
+.hero-image{
+    flex:1;
+    display:flex;
+    justify-content:center;
+}
 
-            <h2>Healthy Teeth</h2>
+.card{
+    background:white;
+    width:350px;
+    padding:40px;
+    border-radius:20px;
+    box-shadow:0 15px 35px rgba(0,0,0,.12);
+    text-align:center;
+}
 
-            <p>
-                Professional treatments, routine checkups,
-                cosmetic dentistry and emergency care.
-            </p>
+.big-icon{
+    font-size:70px;
+    color:#0a84ff;
+    margin-bottom:20px;
+}
 
-        </div>
+.card h2{
+    margin-bottom:15px;
+}
 
-    </div>
+.card p{
+    line-height:1.7;
+}
 
-</section>
+/* Services */
 
-<section class="services">
+.services{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+    padding:60px 8%;
+}
 
-    <div class="service">
+.service{
+    background:white;
+    border-radius:15px;
+    padding:35px;
+    text-align:center;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    transition:.3s;
+}
 
-        <i class="fa-solid fa-tooth"></i>
+.service:hover{
+    transform:translateY(-8px);
+}
 
-        <h3>General Dentistry</h3>
+.service i{
+    font-size:45px;
+    color:#0a84ff;
+    margin-bottom:20px;
+}
 
-        <p>
-            Regular checkups and complete oral care.
-        </p>
+.service h3{
+    margin-bottom:15px;
+}
 
-    </div>
+/* Footer */
 
-    <div class="service">
+footer{
+    background:#0a84ff;
+    color:white;
+    text-align:center;
+    padding:40px;
+    margin-top:60px;
+}
 
-        <i class="fa-solid fa-face-smile"></i>
+footer p{
+    margin-top:10px;
+}
 
-        <h3>Teeth Whitening</h3>
+/* Appointment Page */
 
-        <p>
-            Brighten your smile with safe whitening.
-        </p>
+.small-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 8%;
+    background:white;
+}
 
-    </div>
+.back-btn{
+    text-decoration:none;
+    color:#0a84ff;
+    font-weight:600;
+}
 
-    <div class="service">
+.appointment-container{
+    display:flex;
+    justify-content:center;
+    padding:50px 20px;
+}
 
-        <i class="fa-solid fa-syringe"></i>
+form{
+    background:white;
+    width:700px;
+    max-width:100%;
+    padding:40px;
+    border-radius:20px;
+    box-shadow:0 10px 25px rgba(0,0,0,.1);
+}
 
-        <h3>Dental Treatments</h3>
+form h1{
+    margin-bottom:10px;
+}
 
-        <p>
-            Professional procedures using modern equipment.
-        </p>
+form p{
+    margin-bottom:30px;
+}
 
-    </div>
+.input-group{
+    display:flex;
+    flex-direction:column;
+    margin-bottom:20px;
+}
 
-</section>
+.input-group label{
+    margin-bottom:8px;
+    font-weight:600;
+}
 
-<footer>
+input,
+textarea{
+    padding:14px;
+    border:1px solid #ccc;
+    border-radius:10px;
+    font-size:16px;
+}
 
-    <h3>Ayoub Boukri Dental </h3>
+textarea{
+    resize:none;
+}
 
-    <p>
-        Book your appointment online anytime.
-    </p>
+.row{
+    display:flex;
+    gap:20px;
+}
 
-    <p>
-        © 2026 All Rights Reserved
-    </p>
+.row .input-group{
+    flex:1;
+}
 
-</footer>
+.submit-btn{
+    width:100%;
+    border:none;
+    background:#0a84ff;
+    color:white;
+    padding:16px;
+    border-radius:10px;
+    font-size:18px;
+    cursor:pointer;
+    transition:.3s;
+}
 
-</body>
-</html>
+.submit-btn:hover{
+    background:#0067d6;
+}
+
+#status{
+    margin-top:20px;
+    text-align:center;
+    font-weight:bold;
+}
+
+/* Mobile */
+
+@media(max-width:900px){
+
+.hero{
+    flex-direction:column;
+    text-align:center;
+}
+
+.hero-text h1{
+    font-size:38px;
+}
+
+.row{
+    flex-direction:column;
+}
+
+header{
+    flex-direction:column;
+    gap:20px;
+}
+
+    .location{
+    padding:70px 8%;
+    text-align:center;
+}
+
+.location h2{
+    color:#0a84ff;
+    margin-bottom:20px;
+}
+
+.location p{
+    margin-bottom:30px;
+    font-size:18px;
+}
+
+.location iframe{
+    box-shadow:0 10px 25px rgba(0,0,0,.15);
+}
+
+}
