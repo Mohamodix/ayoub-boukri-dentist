@@ -1,494 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ayoub Boukri Dental Clinic</title>
+    <title>Ayoub Boukri Dental </title>
 
     <link rel="stylesheet" href="style.css">
 
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 
 <body>
 
-<!--==================== TOP BAR ====================-->
-
-<div class="top-bar">
-
-    <div class="top-left">
-
-        <span><i class="fa-solid fa-location-dot"></i> YOUR ADDRESS HERE</span>
-
-        <span><i class="fa-solid fa-envelope"></i> contact@ayoubdentist.com</span>
-
-    </div>
-
-    <div class="top-right">
-
-        <a href="#"><i class="fab fa-facebook-f"></i></a>
-
-        <a href="#"><i class="fab fa-instagram"></i></a>
-
-        <a href="#"><i class="fab fa-whatsapp"></i></a>
-
-    </div>
-
-</div>
-
-<!--==================== NAVBAR ====================-->
-
 <header>
 
     <div class="logo">
+        <i class="fa-solid fa-tooth"></i>
+        Ayoub Boukri Dental 
+    </div>
 
-        <i class="fa-regular fa-tooth"></i>
+    <nav>
+        <a href="#">Home</a>
+        <a href="appointment.html" class="appointment-btn">
+            Take Appointment
+        </a>
+    </nav>
 
-        <div>
+</header>
 
-            <h2>Ayoub Boukri</h2>
+<section class="hero">
 
-            <span>DENTAL CLINIC</span>
+    <div class="hero-text">
+
+        <h1>Your Smile Deserves The Best Care</h1>
+
+        <p>
+            Welcome to Ayoub Boukri Dental .
+            We provide modern dental care with a friendly,
+            professional approach. Book your appointment online
+            in just a few clicks.
+        </p>
+
+        <a href="appointment.html" class="main-button">
+            <i class="fa-solid fa-calendar-check"></i>
+            Take Appointment
+        </a>
+
+    </div>
+
+    <div class="hero-image">
+
+        <div class="card">
+
+            <i class="fa-solid fa-tooth big-icon"></i>
+
+            <h2>Healthy Teeth</h2>
+
+            <p>
+                Professional treatments, routine checkups,
+                cosmetic dentistry and emergency care.
+            </p>
 
         </div>
 
     </div>
 
-    <nav>
-
-        <a href="#">Home</a>
-
-        <a href="#about">About</a>
-
-        <a href="#services">Services</a>
-
-        <a href="#reviews">Reviews</a>
-
-        <a href="#location">Location</a>
-
-    </nav>
-
-    <a href="appointment.html" class="appointment-btn">
-
-        <i class="fa-solid fa-calendar-check"></i>
-
-        Book Appointment
-
-    </a>
-
-</header>
-
-<!--==================== HERO ====================-->
-
-<section class="hero">
-
-<div class="hero-left">
-
-<span class="mini-title">
-
-<i class="fa-solid fa-circle-check"></i>
-
-YOUR SMILE, OUR PASSION
-
-</span>
-
-<h1>
-
-Healthy Smile,<br>
-
-<span>Beautiful You.</span>
-
-</h1>
-
-<p>
-
-We provide high-quality dental care using modern equipment in a comfortable and welcoming environment. Your smile is our priority.
-
-</p>
-
-<div class="hero-buttons">
-
-<a href="appointment.html" class="btn-primary">
-
-Book Appointment
-
-</a>
-
-<a href="#about" class="btn-secondary">
-
-Learn More
-
-</a>
-
-</div>
-
-<div class="patients">
-
-<div class="avatars">
-
-<img src="https://i.pravatar.cc/50?img=11">
-
-<img src="https://i.pravatar.cc/50?img=18">
-
-<img src="https://i.pravatar.cc/50?img=22">
-
-<img src="https://i.pravatar.cc/50?img=35">
-
-</div>
-
-<div>
-
-<h3>500+</h3>
-
-<p>Happy Patients</p>
-
-</div>
-
-</div>
-
-</div>
-
-<div class="hero-right">
-
-<img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=900" alt="Dentist">
-
-</div>
-
 </section>
 
-<!--==================== SERVICES ====================-->
+<section class="services">
 
-<section class="services" id="services">
+    <div class="service">
 
-<div class="section-title">
+        <i class="fa-solid fa-tooth"></i>
 
-<span>OUR SERVICES</span>
+        <h3>General Dentistry</h3>
 
-<h2>Quality Dental Care For The Whole Family</h2>
+        <p>
+            Regular checkups and complete oral care.
+        </p>
 
-</div>
+    </div>
 
-<div class="services-grid">
+    <div class="service">
 
-<div class="service-card">
+        <i class="fa-solid fa-face-smile"></i>
 
-<i class="fa-solid fa-tooth"></i>
+        <h3>Teeth Whitening</h3>
 
-<h3>General Dentistry</h3>
+        <p>
+            Brighten your smile with safe whitening.
+        </p>
 
-<p>Complete dental care for healthy teeth and gums.</p>
+    </div>
 
-</div>
+    <div class="service">
 
-<div class="service-card">
+        <i class="fa-solid fa-syringe"></i>
 
-<i class="fa-solid fa-star"></i>
+        <h3>Dental Treatments</h3>
 
-<h3>Teeth Whitening</h3>
+        <p>
+            Professional procedures using modern equipment.
+        </p>
 
-<p>Professional whitening for a brighter smile.</p>
-
-</div>
-
-<div class="service-card">
-
-<i class="fa-solid fa-teeth"></i>
-
-<h3>Orthodontics</h3>
-
-<p>Braces and aligners for perfectly straight teeth.</p>
-
-</div>
-
-<div class="service-card">
-
-<i class="fa-solid fa-screwdriver-wrench"></i>
-
-<h3>Dental Implants</h3>
-
-<p>Permanent tooth replacement with natural results.</p>
-
-</div>
-
-<div class="service-card">
-
-<i class="fa-solid fa-shield-heart"></i>
-
-<h3>Cosmetic Dentistry</h3>
-
-<p>Improve your smile with modern cosmetic treatments.</p>
-
-</div>
-
-<div class="service-card">
-
-<i class="fa-solid fa-heart-circle-check"></i>
-
-<h3>Preventive Care</h3>
-
-<p>Regular checkups and cleaning for lifelong oral health.</p>
-
-</div>
-
-</div>
+    </div>
 
 </section>
-
-<!--==================== STATS ====================-->
-
-<section class="stats">
-
-<div class="stat-box">
-
-<i class="fa-regular fa-face-smile"></i>
-
-<h2>500+</h2>
-
-<p>Happy Patients</p>
-
-</div>
-
-<div class="stat-box">
-
-<i class="fa-regular fa-star"></i>
-
-<h2>15+</h2>
-
-<p>Years Experience</p>
-
-</div>
-
-<div class="stat-box">
-
-<i class="fa-solid fa-tooth"></i>
-
-<h2>1000+</h2>
-
-<p>Treatments Done</p>
-
-</div>
-
-<div class="stat-box">
-
-<i class="fa-solid fa-award"></i>
-
-<h2>98%</h2>
-
-<p>Patient Satisfaction</p>
-
-</div>
-
-</section>
-<!--==================== ABOUT ====================-->
-
-<section class="about" id="about">
-
-<div class="about-image">
-
-<img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=900" alt="Dental Clinic">
-
-</div>
-
-<div class="about-content">
-
-<span>ABOUT OUR CLINIC</span>
-
-<h2>Modern Dentistry With A Gentle Touch</h2>
-
-<p>
-
-At Ayoub Boukri Dental Clinic, we combine advanced dental technology with personalized care to create healthy, confident smiles. Every patient receives professional treatment in a comfortable environment.
-
-</p>
-
-<div class="about-list">
-
-<div>
-<i class="fa-solid fa-check"></i>
-<span>Modern Dental Equipment</span>
-</div>
-
-<div>
-<i class="fa-solid fa-check"></i>
-<span>Experienced Dentist</span>
-</div>
-
-<div>
-<i class="fa-solid fa-check"></i>
-<span>Comfortable Environment</span>
-</div>
-
-<div>
-<i class="fa-solid fa-check"></i>
-<span>Affordable Treatments</span>
-</div>
-
-</div>
-
-<a href="appointment.html" class="btn-primary">
-
-Book Your Visit
-
-</a>
-
-</div>
-
-</section>
-
-<!--==================== CTA ====================-->
-
-<section class="cta">
-
-<div class="cta-content">
-
-<h2>Need a Dental Checkup?</h2>
-
-<p>
-
-Book your appointment online in less than one minute.
-
-</p>
-
-<a href="appointment.html" class="appointment-btn">
-
-<i class="fa-solid fa-calendar-check"></i>
-
-Take Appointment
-
-</a>
-
-</div>
-
-</section>
-
-<!--==================== LOCATION ====================-->
-
-<section class="location" id="location">
-
-<div class="section-title">
-
-<span>OUR LOCATION</span>
-
-<h2>Visit Our Dental Clinic</h2>
-
-</div>
-
-<p>
-
-📍 YOUR ADDRESS HERE<br>
-Casablanca, Morocco
-
-</p>
-
-<iframe
-src="YOUR_GOOGLE_MAPS_EMBED_LINK"
-width="100%"
-height="450"
-style="border:0;border-radius:25px;"
-allowfullscreen=""
-loading="lazy">
-</iframe>
-
-</section>
-
-<!--==================== REVIEWS ====================-->
-
-<section class="reviews" id="reviews">
-
-<div class="section-title">
-
-<span>TESTIMONIALS</span>
-
-<h2>What Our Patients Say</h2>
-
-</div>
-
-<div class="reviews-grid">
-
-<div class="review-card">
-
-★★★★★
-
-<p>
-
-Professional service, painless treatment, and very friendly staff. Highly recommended!
-
-</p>
-
-<h4>Sarah M.</h4>
-
-</div>
-
-<div class="review-card">
-
-★★★★★
-
-<p>
-
-The clinic is modern, clean, and Dr. Ayoub explained every step clearly.
-
-</p>
-
-<h4>Youssef A.</h4>
-
-</div>
-
-<div class="review-card">
-
-★★★★★
-
-<p>
-
-Best dentist I've visited. Booking was easy and the treatment was excellent.
-
-</p>
-
-<h4>Nadia K.</h4>
-
-</div>
-
-</div>
-
-</section>
-
-<!--==================== FOOTER ====================-->
 
 <footer>
 
-<div class="footer-content">
+    <h3>Ayoub Boukri Dental </h3>
 
-<h2>Ayoub Boukri Dental Clinic</h2>
+    <p>
+        Book your appointment online anytime.
+    </p>
 
-<p>
-
-Creating healthy smiles every day.
-
-</p>
-
-<div class="footer-icons">
-
-<a href="#"><i class="fab fa-facebook-f"></i></a>
-
-<a href="#"><i class="fab fa-instagram"></i></a>
-
-<a href="#"><i class="fab fa-whatsapp"></i></a>
-
-</div>
-
-<p class="copyright">
-
-© 2026 Ayoub Boukri Dental Clinic. All rights reserved.
-
-</p>
-
-</div>
+    <p>
+        © 2026 All Rights Reserved
+    </p>
 
 </footer>
 
 </body>
-
 </html>
