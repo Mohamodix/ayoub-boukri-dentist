@@ -1,290 +1,494 @@
-/* Google Font */
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:'Poppins',sans-serif;
-}
+<!DOCTYPE html>
+<html lang="en">
 
-body{
-    background:#f4f9ff;
-    color:#222;
-}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayoub Boukri Dental Clinic</title>
 
-/* Header */
+    <link rel="stylesheet" href="style.css">
 
-header{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:20px 8%;
-    background:white;
-    box-shadow:0 2px 10px rgba(0,0,0,.08);
-    position:sticky;
-    top:0;
-}
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
-.logo{
-    font-size:24px;
-    font-weight:700;
-    color:#0a84ff;
-}
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
 
-.logo i{
-    margin-right:10px;
-}
+<body>
 
-nav{
-    display:flex;
-    gap:20px;
-}
+<!--==================== TOP BAR ====================-->
 
-nav a{
-    text-decoration:none;
-    color:#333;
-    font-weight:500;
-}
+<div class="top-bar">
 
-.appointment-btn{
-    background:#0a84ff;
-    color:white;
-    padding:12px 20px;
-    border-radius:8px;
-    transition:.3s;
-}
+    <div class="top-left">
 
-.appointment-btn:hover{
-    background:#0067d6;
-}
+        <span><i class="fa-solid fa-location-dot"></i> YOUR ADDRESS HERE</span>
 
-/* Hero */
+        <span><i class="fa-solid fa-envelope"></i> contact@ayoubdentist.com</span>
 
-.hero{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:80px 8%;
-    gap:50px;
-}
+    </div>
 
-.hero-text{
-    flex:1;
-}
+    <div class="top-right">
 
-.hero-text h1{
-    font-size:52px;
-    margin-bottom:20px;
-    color:#0a84ff;
-}
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
 
-.hero-text p{
-    font-size:18px;
-    line-height:1.8;
-    margin-bottom:30px;
-}
+        <a href="#"><i class="fab fa-instagram"></i></a>
 
-.main-button{
-    text-decoration:none;
-    background:#0a84ff;
-    color:white;
-    padding:15px 28px;
-    border-radius:10px;
-    display:inline-block;
-    transition:.3s;
-}
+        <a href="#"><i class="fab fa-whatsapp"></i></a>
 
-.main-button:hover{
-    transform:translateY(-4px);
-}
+    </div>
 
-.hero-image{
-    flex:1;
-    display:flex;
-    justify-content:center;
-}
+</div>
 
-.card{
-    background:white;
-    width:350px;
-    padding:40px;
-    border-radius:20px;
-    box-shadow:0 15px 35px rgba(0,0,0,.12);
-    text-align:center;
-}
+<!--==================== NAVBAR ====================-->
 
-.big-icon{
-    font-size:70px;
-    color:#0a84ff;
-    margin-bottom:20px;
-}
+<header>
 
-.card h2{
-    margin-bottom:15px;
-}
+    <div class="logo">
 
-.card p{
-    line-height:1.7;
-}
+        <i class="fa-regular fa-tooth"></i>
 
-/* Services */
+        <div>
 
-.services{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:30px;
-    padding:60px 8%;
-}
+            <h2>Ayoub Boukri</h2>
 
-.service{
-    background:white;
-    border-radius:15px;
-    padding:35px;
-    text-align:center;
-    box-shadow:0 10px 25px rgba(0,0,0,.08);
-    transition:.3s;
-}
+            <span>DENTAL CLINIC</span>
 
-.service:hover{
-    transform:translateY(-8px);
-}
+        </div>
 
-.service i{
-    font-size:45px;
-    color:#0a84ff;
-    margin-bottom:20px;
-}
+    </div>
 
-.service h3{
-    margin-bottom:15px;
-}
+    <nav>
 
-/* Footer */
+        <a href="#">Home</a>
 
-footer{
-    background:#0a84ff;
-    color:white;
-    text-align:center;
-    padding:40px;
-    margin-top:60px;
-}
+        <a href="#about">About</a>
 
-footer p{
-    margin-top:10px;
-}
+        <a href="#services">Services</a>
 
-/* Appointment Page */
+        <a href="#reviews">Reviews</a>
 
-.small-header{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:20px 8%;
-    background:white;
-}
+        <a href="#location">Location</a>
 
-.back-btn{
-    text-decoration:none;
-    color:#0a84ff;
-    font-weight:600;
-}
+    </nav>
 
-.appointment-container{
-    display:flex;
-    justify-content:center;
-    padding:50px 20px;
-}
+    <a href="appointment.html" class="appointment-btn">
 
-form{
-    background:white;
-    width:700px;
-    max-width:100%;
-    padding:40px;
-    border-radius:20px;
-    box-shadow:0 10px 25px rgba(0,0,0,.1);
-}
+        <i class="fa-solid fa-calendar-check"></i>
 
-form h1{
-    margin-bottom:10px;
-}
+        Book Appointment
 
-form p{
-    margin-bottom:30px;
-}
+    </a>
 
-.input-group{
-    display:flex;
-    flex-direction:column;
-    margin-bottom:20px;
-}
+</header>
 
-.input-group label{
-    margin-bottom:8px;
-    font-weight:600;
-}
+<!--==================== HERO ====================-->
 
-input,
-textarea{
-    padding:14px;
-    border:1px solid #ccc;
-    border-radius:10px;
-    font-size:16px;
-}
+<section class="hero">
 
-textarea{
-    resize:none;
-}
+<div class="hero-left">
 
-.row{
-    display:flex;
-    gap:20px;
-}
+<span class="mini-title">
 
-.row .input-group{
-    flex:1;
-}
+<i class="fa-solid fa-circle-check"></i>
 
-.submit-btn{
-    width:100%;
-    border:none;
-    background:#0a84ff;
-    color:white;
-    padding:16px;
-    border-radius:10px;
-    font-size:18px;
-    cursor:pointer;
-    transition:.3s;
-}
+YOUR SMILE, OUR PASSION
 
-.submit-btn:hover{
-    background:#0067d6;
-}
+</span>
 
-#status{
-    margin-top:20px;
-    text-align:center;
-    font-weight:bold;
-}
+<h1>
 
-/* Mobile */
+Healthy Smile,<br>
 
-@media(max-width:900px){
+<span>Beautiful You.</span>
 
-.hero{
-    flex-direction:column;
-    text-align:center;
-}
+</h1>
 
-.hero-text h1{
-    font-size:38px;
-}
+<p>
 
-.row{
-    flex-direction:column;
-}
+We provide high-quality dental care using modern equipment in a comfortable and welcoming environment. Your smile is our priority.
 
-header{
-    flex-direction:column;
-    gap:20px;
-}
+</p>
 
-}
+<div class="hero-buttons">
+
+<a href="appointment.html" class="btn-primary">
+
+Book Appointment
+
+</a>
+
+<a href="#about" class="btn-secondary">
+
+Learn More
+
+</a>
+
+</div>
+
+<div class="patients">
+
+<div class="avatars">
+
+<img src="https://i.pravatar.cc/50?img=11">
+
+<img src="https://i.pravatar.cc/50?img=18">
+
+<img src="https://i.pravatar.cc/50?img=22">
+
+<img src="https://i.pravatar.cc/50?img=35">
+
+</div>
+
+<div>
+
+<h3>500+</h3>
+
+<p>Happy Patients</p>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="hero-right">
+
+<img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=900" alt="Dentist">
+
+</div>
+
+</section>
+
+<!--==================== SERVICES ====================-->
+
+<section class="services" id="services">
+
+<div class="section-title">
+
+<span>OUR SERVICES</span>
+
+<h2>Quality Dental Care For The Whole Family</h2>
+
+</div>
+
+<div class="services-grid">
+
+<div class="service-card">
+
+<i class="fa-solid fa-tooth"></i>
+
+<h3>General Dentistry</h3>
+
+<p>Complete dental care for healthy teeth and gums.</p>
+
+</div>
+
+<div class="service-card">
+
+<i class="fa-solid fa-star"></i>
+
+<h3>Teeth Whitening</h3>
+
+<p>Professional whitening for a brighter smile.</p>
+
+</div>
+
+<div class="service-card">
+
+<i class="fa-solid fa-teeth"></i>
+
+<h3>Orthodontics</h3>
+
+<p>Braces and aligners for perfectly straight teeth.</p>
+
+</div>
+
+<div class="service-card">
+
+<i class="fa-solid fa-screwdriver-wrench"></i>
+
+<h3>Dental Implants</h3>
+
+<p>Permanent tooth replacement with natural results.</p>
+
+</div>
+
+<div class="service-card">
+
+<i class="fa-solid fa-shield-heart"></i>
+
+<h3>Cosmetic Dentistry</h3>
+
+<p>Improve your smile with modern cosmetic treatments.</p>
+
+</div>
+
+<div class="service-card">
+
+<i class="fa-solid fa-heart-circle-check"></i>
+
+<h3>Preventive Care</h3>
+
+<p>Regular checkups and cleaning for lifelong oral health.</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!--==================== STATS ====================-->
+
+<section class="stats">
+
+<div class="stat-box">
+
+<i class="fa-regular fa-face-smile"></i>
+
+<h2>500+</h2>
+
+<p>Happy Patients</p>
+
+</div>
+
+<div class="stat-box">
+
+<i class="fa-regular fa-star"></i>
+
+<h2>15+</h2>
+
+<p>Years Experience</p>
+
+</div>
+
+<div class="stat-box">
+
+<i class="fa-solid fa-tooth"></i>
+
+<h2>1000+</h2>
+
+<p>Treatments Done</p>
+
+</div>
+
+<div class="stat-box">
+
+<i class="fa-solid fa-award"></i>
+
+<h2>98%</h2>
+
+<p>Patient Satisfaction</p>
+
+</div>
+
+</section>
+<!--==================== ABOUT ====================-->
+
+<section class="about" id="about">
+
+<div class="about-image">
+
+<img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=900" alt="Dental Clinic">
+
+</div>
+
+<div class="about-content">
+
+<span>ABOUT OUR CLINIC</span>
+
+<h2>Modern Dentistry With A Gentle Touch</h2>
+
+<p>
+
+At Ayoub Boukri Dental Clinic, we combine advanced dental technology with personalized care to create healthy, confident smiles. Every patient receives professional treatment in a comfortable environment.
+
+</p>
+
+<div class="about-list">
+
+<div>
+<i class="fa-solid fa-check"></i>
+<span>Modern Dental Equipment</span>
+</div>
+
+<div>
+<i class="fa-solid fa-check"></i>
+<span>Experienced Dentist</span>
+</div>
+
+<div>
+<i class="fa-solid fa-check"></i>
+<span>Comfortable Environment</span>
+</div>
+
+<div>
+<i class="fa-solid fa-check"></i>
+<span>Affordable Treatments</span>
+</div>
+
+</div>
+
+<a href="appointment.html" class="btn-primary">
+
+Book Your Visit
+
+</a>
+
+</div>
+
+</section>
+
+<!--==================== CTA ====================-->
+
+<section class="cta">
+
+<div class="cta-content">
+
+<h2>Need a Dental Checkup?</h2>
+
+<p>
+
+Book your appointment online in less than one minute.
+
+</p>
+
+<a href="appointment.html" class="appointment-btn">
+
+<i class="fa-solid fa-calendar-check"></i>
+
+Take Appointment
+
+</a>
+
+</div>
+
+</section>
+
+<!--==================== LOCATION ====================-->
+
+<section class="location" id="location">
+
+<div class="section-title">
+
+<span>OUR LOCATION</span>
+
+<h2>Visit Our Dental Clinic</h2>
+
+</div>
+
+<p>
+
+📍 YOUR ADDRESS HERE<br>
+Casablanca, Morocco
+
+</p>
+
+<iframe
+src="YOUR_GOOGLE_MAPS_EMBED_LINK"
+width="100%"
+height="450"
+style="border:0;border-radius:25px;"
+allowfullscreen=""
+loading="lazy">
+</iframe>
+
+</section>
+
+<!--==================== REVIEWS ====================-->
+
+<section class="reviews" id="reviews">
+
+<div class="section-title">
+
+<span>TESTIMONIALS</span>
+
+<h2>What Our Patients Say</h2>
+
+</div>
+
+<div class="reviews-grid">
+
+<div class="review-card">
+
+★★★★★
+
+<p>
+
+Professional service, painless treatment, and very friendly staff. Highly recommended!
+
+</p>
+
+<h4>Sarah M.</h4>
+
+</div>
+
+<div class="review-card">
+
+★★★★★
+
+<p>
+
+The clinic is modern, clean, and Dr. Ayoub explained every step clearly.
+
+</p>
+
+<h4>Youssef A.</h4>
+
+</div>
+
+<div class="review-card">
+
+★★★★★
+
+<p>
+
+Best dentist I've visited. Booking was easy and the treatment was excellent.
+
+</p>
+
+<h4>Nadia K.</h4>
+
+</div>
+
+</div>
+
+</section>
+
+<!--==================== FOOTER ====================-->
+
+<footer>
+
+<div class="footer-content">
+
+<h2>Ayoub Boukri Dental Clinic</h2>
+
+<p>
+
+Creating healthy smiles every day.
+
+</p>
+
+<div class="footer-icons">
+
+<a href="#"><i class="fab fa-facebook-f"></i></a>
+
+<a href="#"><i class="fab fa-instagram"></i></a>
+
+<a href="#"><i class="fab fa-whatsapp"></i></a>
+
+</div>
+
+<p class="copyright">
+
+© 2026 Ayoub Boukri Dental Clinic. All rights reserved.
+
+</p>
+
+</div>
+
+</footer>
+
+</body>
+
+</html>
